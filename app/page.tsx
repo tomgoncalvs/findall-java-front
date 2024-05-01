@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
           Nunca foi tão fácil encontrar um serviço.
         </p>
         <div className="flex flex-col gap-4 w-full">
+          <Link href={"/buscar"}>
           <button className="bg-custom-purple text-white text-lg px-10 py-4 rounded flex items-center justify-center gap-2 w-full">
             <Image
               src="/images/Group.svg"
@@ -18,6 +20,8 @@ export default function Home() {
             />
             Contratar
           </button>
+          </Link>
+          <Link href={"/cadastro"}>
           <button className="bg-custom-red text-white text-lg px-10 py-4 rounded flex items-center justify-center gap-2 w-full">
             <Image
               src="/images/Vector.svg"
@@ -27,6 +31,7 @@ export default function Home() {
             />
             Oferecer
           </button>
+          </Link>
         </div>
       </div>
 
